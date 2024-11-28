@@ -81,6 +81,7 @@
     <Compile Include="Platformer\PlatformConfig.cs" />
     <Compile Include="Platformer\PlayerPlatformController.User.cs" />
     <Compile Include="Platformer\PlatformControllerConfig.cs" />
+    <Compile Include="Platformer\Systems\DeathSystem.cs" />
     <Compile Include="Platformer\Systems\MovementSystem.cs" />
     <Compile Include="Platformer\Systems\PlatformFollowSystem.cs" />
     <Compile Include="Platformer\Systems\PlatformInertiaSystem.cs" />
@@ -88,6 +89,7 @@
     <Compile Include="Platformer\Systems\PlatformMovementSystem.cs" />
     <Compile Include="Platformer\Systems\PlatformRotationSystem.cs" />
     <Compile Include="Platformer\Systems\PlatformTimeAccumulatorSystem.cs" />
+    <Compile Include="Platformer\Systems\PlayerFallDamageSystem.cs" />
     <Compile Include="Platformer\Systems\PlayerHeadSystem.cs" />
     <Compile Include="Platformer\Systems\PlayerSpawnSystem.cs" />
     <Compile Include="RuntimeConfig.User.cs" />
@@ -100,7 +102,10 @@
     <EmbeddedResource Include="db.json" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Platformer\DSL\DamagedEvent.qtn" />
+    <None Include="Platformer\DSL\Health.qtn" />
     <None Include="Platformer\DSL\Input.qtn" />
+    <None Include="Platformer\DSL\PlayerFallState.qtn" />
     <None Include="Platformer\DSL\PlayerLink.qtn" />
   </ItemGroup>
   <ItemGroup>

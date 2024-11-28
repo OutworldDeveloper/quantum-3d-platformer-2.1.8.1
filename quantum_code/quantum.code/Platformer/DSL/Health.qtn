@@ -1,0 +1,4 @@
+﻿component Health
+{
+    FP Value;
+}
