@@ -1,0 +1,5 @@
+﻿component PlayerFallingController
+{
+    bool Falling;
+    FP PeakY;
+}

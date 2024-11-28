@@ -1,0 +1,4 @@
+event Damaged
+{
+	FP Amount;
+}
