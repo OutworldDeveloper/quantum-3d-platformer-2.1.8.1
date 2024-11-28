@@ -9,6 +9,9 @@ namespace Quantum.Platformer.Systems
 {
     public unsafe class PlayerFallDamageSystem : SystemMainThreadFilter<PlayerFallDamageSystem.Filter>
     {
+
+        public const int MAX_SAFE_FALL_DISTANCE = 4;
+
         public struct Filter
         {
             public EntityRef Entity;
@@ -39,7 +42,7 @@ namespace Quantum.Platformer.Systems
                     FP finalY = filter.Transform3D->Position.Y;
 
                     FP fallDistance = startY - finalY;
-                    bool applyDamage = fallDistance > 4;
+                    bool applyDamage = fallDistance > MAX_SAFE_FALL_DISTANCE;
 
                     if (applyDamage)
                     {
